@@ -1,0 +1,20 @@
+BUILD STEPS
+(1) create a project named smart-brain-api on github
+	
+	github: winter.xxx5
+	
+	git clone https://github.com/marvinxu99/smart-brain-api.git
+
+	git status
+	git add .     git add <file>
+	git commit -m"fixing some issues"
+	git push
+
+(2) npm init
+
+(3) Install packages
+- npm install expess
+- npm install body-parser
+- npm install --save --only=dev nodemon 
+
+(4)
