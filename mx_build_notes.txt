@@ -17,4 +17,17 @@ BUILD STEPS
 - npm install body-parser
 - npm install --save --only=dev nodemon 
 
-(4)
+(4) Storing passowrds: bcrypt-nodejs
+  - npm install bcrypt-nodejs   --- it is depreciated...use bcrypt instead.
+
+   Use npm uninstall <packageName> --save to uninstall a package and remove it's entry in package.json
+
+(5) Complete Guide - How to Migrate from HTTP to HTTPS:
+	https://www.keycdn.com/blog/http-to-https
+
+(6) CORS - Cross-Origin Resource Sharing
+https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+
+(7) npm install cors
+
+(8)
