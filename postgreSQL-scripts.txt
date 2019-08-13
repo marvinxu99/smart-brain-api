@@ -1,0 +1,15 @@
+create table login (
+	id serial primary key,
+	hash varchar(100) not null,
+	email text unique not null
+);
+
+CREATE TABLE public.users (
+	id serial NOT NULL,
+	name varchar(100) NULL,
+	email text NOT NULL,
+	entries int8 NULL DEFAULT 0,
+	joined timestamp NOT NULL,
+	CONSTRAINT users_email_key UNIQUE (email),
+	CONSTRAINT users_pkey PRIMARY KEY (id)
+);

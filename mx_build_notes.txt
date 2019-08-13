@@ -57,3 +57,10 @@ BUILD STEPS
 
 	- heroku logs --tail
 
+	- install heroku postgres database
+	- run "heroku addons" to confirm
+		https://devcenter.heroku.com/articles/heroku-postgresql#using-the-cli
+
+    - heroku pg:info
+	- heroku pg:psql
+	
