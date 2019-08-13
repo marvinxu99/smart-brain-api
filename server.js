@@ -27,7 +27,8 @@ app.use(cors());
 
 
 app.get('/', (req, res) => {
-  db.select('*').from('users').then(users => res.send(users));
+//  db.select('*').from('users').then(users => res.send(users));
+  res.send('it is working!');
 });
 
 app.get('/profile/:id', (req, res) => { profile.handleProgileGet(req, res, db) });
