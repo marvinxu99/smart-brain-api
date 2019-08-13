@@ -63,4 +63,6 @@ BUILD STEPS
 
     - heroku pg:info
 	- heroku pg:psql
-	
+
+	- heroku config
+
