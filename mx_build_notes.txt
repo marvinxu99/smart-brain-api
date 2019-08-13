@@ -17,17 +17,43 @@ BUILD STEPS
 - npm install body-parser
 - npm install --save --only=dev nodemon 
 
-(4) Storing passowrds: bcrypt-nodejs
-  - npm install bcrypt-nodejs   --- it is depreciated...use bcrypt instead.
+(4) Storing passowrds using node.bcrypt.js
+  - npm install bcrypt 
 
    Use npm uninstall <packageName> --save to uninstall a package and remove it's entry in package.json
+	https://www.npmjs.com/package/bcrypt
 
 (5) Complete Guide - How to Migrate from HTTP to HTTPS:
 	https://www.keycdn.com/blog/http-to-https
 
 (6) CORS - Cross-Origin Resource Sharing
-https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+	https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 
 (7) npm install cors
 
-(8)
+(8) Hosting websites
+    Heorku, enginr yard, digitalOcean, amazon webservices
+
+(9) Using Heroku
+    heroku.com   
+	username: marvinxu99@hotmail.com/eric.xxx5
+
+	Created a new app called winter-x-brain
+
+(10) Install the Heroku CLI.
+
+(11) Preparing a codebase for Heroku Deployment (with Git)
+	https://devcenter.heroku.com/articles/git
+	
+	- cd C:\Users\Marvin\my-learning\Node\smart-brain-api
+	- heroku create
+	   created radiant-mesa-43978
+	   https://radiant-mesa-43978.herokuapp.com | https://git.heroku.com/radiant-mesa-43978.git
+	- heroku remove -v   to check confirm that a remove name heroku has been set up for your app.
+	- git push heroku master     to deploy your app to heroku.
+	  git push origin master    to github
+
+	- heroku open    - to open the app.
+
+	- heroku logs --tail
+
