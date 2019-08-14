@@ -1,7 +1,7 @@
 BUILD STEPS
 (1) create a project named smart-brain-api on github
 	
-	github: winter.xxx5
+	github: marvinxu99@hotmail.com / winter.xxx5
 	
 	git clone https://github.com/marvinxu99/smart-brain-api.git
 
@@ -49,7 +49,7 @@ BUILD STEPS
 	- heroku create
 	   created radiant-mesa-43978
 	   https://radiant-mesa-43978.herokuapp.com | https://git.heroku.com/radiant-mesa-43978.git
-	- heroku remove -v   to check confirm that a remove name heroku has been set up for your app.
+	- git remote -v   to check confirm that a remote name heroku has been set up for your app.
 	- git push heroku master     to deploy your app to heroku.
 	  git push origin master    to github
 
