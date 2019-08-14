@@ -9,22 +9,24 @@ const signin = require('./controllers/signin');
 const register = require('./controllers/register');
 const image = require('./controllers/image');
 
-//const db = knex({
-//    client: 'pg',
-//    connection: {
-//      host : '127.0.0.1postgresql-colorful-76029',
-//      user : 'winter',
-//      password : 'winter',
-//      database : 'smart-brain'
-//    }
-//  });
 const db = knex({
     client: 'pg',
     connection: {
-      connectionString: process.env.DATABASE_URL,
-      ssl: true,
+      host : '127.0.0.1',
+      user : 'winter',
+      password : 'winter',
+      database : 'smart-brain'
     }
   });
+
+// for heroku deployment
+//const db = knex({
+//    client: 'pg',
+//    connection: {
+//      connectionString: process.env.DATABASE_URL,
+//      ssl: true,
+//    }
+//  });
 
 const app = express();
 
@@ -34,8 +36,8 @@ app.use(cors());
 
 
 app.get('/', (req, res) => {
-//  db.select('*').from('users').then(users => res.send(users));
-  res.send('it is working!');
+  //db.select('*').from('users').then(users => res.send(users));
+  res.send('API server is working!');
 });
 
 app.get('/profile/:id', (req, res) => { profile.handleProgileGet(req, res, db) });
@@ -46,5 +48,9 @@ app.post('/imageurl', (req, res) => { image.handleApiCall(req, res) });
 
 //app.listen(3001, ()=>{
 app.listen(process.env.PORT || 3001, ()=>{
-  console.log(`app is running on port ${process.env.PORT}`);
+  if (process.env.PORT) {
+    console.log(`app is running on port ${process.env.PORT}`);
+  } else {
+    console.log('app is running on port 3001');
+  }
 });

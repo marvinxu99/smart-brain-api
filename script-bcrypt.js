@@ -1,3 +1,5 @@
+SHOWING HOW TO USE bcrypt
+
 $ npm install bcrypt
 /*
 * You can copy and run the code below to play around with bcrypt
